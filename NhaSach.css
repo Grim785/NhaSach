@@ -1,0 +1,786 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    background-image: url(./HinhAnh/header1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    font-size: 30px;
+    font-weight: bold;
+    color: #a8260f;
+}
+.img_header{
+    margin-right: 100px;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: #b22222;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#d1{
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+    height: 100%;
+    align-items: center;
+}
+
+#d1>li{
+    position: relative;
+    border-right: 1px solid white;
+}
+
+#d1 > li:hover >a{
+    color: #b22222;
+    background-color: white;
+}
+
+#d1 > li:hover >#d3{
+    display: flex;
+    flex-direction: column;
+}
+
+.d2{
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.search
+{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search>button{
+    border: 0;
+}
+
+.search-box{
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 20px;
+    color: #666;
+    border-radius: 20px;
+}
+
+.search-icon{
+    font-size: 20px;
+    background-color: #b22222;
+    color: white;
+    padding: 10px;
+}
+
+#d3{
+    display: none;
+    top: 50px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #ff7300;
+    z-index: 5;
+    box-shadow: 0 0 2px 1px white;
+}
+
+#d3>li{
+    width: 150px;
+    padding: 10px;
+}
+
+#d3>li:hover>.d4{
+    color:#e47a08;
+}
+
+#d3>li:hover {  
+    background-color: white;
+    border-radius: 5px ;
+}
+
+.d4{
+    width: 100%;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+}
+
+#article-home{
+    width: 60%;
+    float: left;
+    background-color: #fee4c3;
+}
+.aside{
+    width: 20%;
+    background-color: #e47a08;
+    height: 1100px;
+}
+
+.aside_img{
+    width: 100%;
+}
+
+#f1{
+    width: 100%;
+}
+
+#f1>li{
+    border-bottom:1px white solid;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    line-height: 50px;
+}
+
+.f2{
+    font-size: 20px;
+    color:white;
+    display: flex;
+    padding-left: 10px;
+}
+
+#f1>li:hover {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+#f1>li:hover .f2{
+    color:#e47a08
+}
+
+#f1>li:hover #f3{
+    display: block;
+}
+
+#f3{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #ff7300;
+    border-radius: 5px;
+    box-shadow:0px 0px 2px 1px white;
+}
+
+#f3>li{
+    display: flex;
+    width: 250px;
+}
+
+.f4{
+    width: 100%;
+    font-size: 18px;
+    line-height: 50px;
+    padding: 0 10px;
+    color: white;
+}
+
+#f3>li:hover{
+    background-color: white;
+    border-radius: 5px;
+}
+#f3>li:hover a{
+    color: #e47a08;
+}
+
+#f5{
+    display: none;
+}
+
+#f5>li{
+    border-top: 1px solid white;
+    background-color:#ff7300;
+}
+
+.f6{
+    display: flex;
+    color:white;
+}
+
+#f5>li:hover{
+    background: white;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+#f5>li:hover a{
+    color:#e47a08;
+}
+
+#f1>li:hover #f5{
+    display: block!important;
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    background-image: url(./HinhAnh/header1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    font-size: 30px;
+    font-weight: bold;
+    color: #a8260f;
+}
+.img_header{
+    margin-right: 100px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+    background-color: #b22222;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#d1{
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+    height: 100%;
+    align-items: center;
+}
+
+#d1>li{
+    position: relative;
+    border-right: 1px solid white;
+}
+
+#d1 > li:hover >a{
+    color: #b22222;
+    background-color: white;
+}
+
+#d1 > li:hover >#d3{
+    display: flex;
+    flex-direction: column;
+}
+
+.d2{
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 10px;
+    font-size: 20px;
+    color: white;
+}
+
+#d3{
+    display: none;
+    top: 50px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #ff7300;
+    z-index: 5;
+    box-shadow: 0 0 2px 1px white;
+}
+
+#d3>li{
+    width: 150px;
+    padding: 10px;
+}
+
+#d3>li:hover>.d4{
+    color:#e47a08;
+}
+
+#d3>li:hover {  
+    background-color: white;
+    border-radius: 5px ;
+}
+
+.d4{
+    width: 100%;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+}
+
+#e1{
+    float: left;
+    height: auto;
+}
+#e2{
+    float: right;
+    height: auto;
+}
+.aside{
+    width: 20%;
+    background-color: #e47a08;
+    height: 1100px;
+}
+
+.aside_img{
+    width: 100%;
+}
+
+#f1{
+    width: 100%;
+}
+
+#f1>li{
+    border-bottom:1px white solid;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    line-height: 50px;
+}
+
+.f2{
+    font-size: 20px;
+    color:white;
+    display: flex;
+    padding-left: 10px;
+}
+
+#f1>li:hover {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+#f1>li:hover .f2{
+    color:#e47a08
+}
+
+#f1>li:hover #f3{
+    display: block;
+}
+
+#f3{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #ff7300;
+    border-radius: 5px;
+    box-shadow:0px 0px 2px 1px white;
+}
+
+#f3>li{
+    display: flex;
+    width: 250px;
+}
+
+.f4{
+    width: 100%;
+    font-size: 18px;
+    line-height: 50px;
+    padding: 0 10px;
+    color: white;
+}
+
+#f3>li:hover{
+    background-color: white;
+    border-radius: 5px;
+}
+#f3>li:hover a{
+    color: #e47a08;
+}
+
+#f5{
+    display: none;
+}
+
+#f5>li{
+    border-top: 1px solid white;
+    background-color:#ff7300;
+}
+
+.f6{
+    display: flex;
+    color:white;
+}
+
+#f5>li:hover{
+    background: white;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+#f5>li:hover a{
+    color:#e47a08;
+}
+
+#f1>li:hover #f5{
+    display: block!important;
+}
+
+#table-home{
+    width: 100%;    
+}
+
+.th-home{
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: #e47a08;
+    padding-left:10px;
+    font-weight: bolder;
+}
+
+/* .tr-home{
+    display: flex;
+    flex-wrap: nowrap;
+} */
+
+.td-home>a{
+    color: #e47a08;
+    cursor: pointer;
+}
+
+.td-home{
+    width: 33%;
+    color: #e47a08;
+    font-size: 20px;
+    font-weight: bold;
+}
+p{
+    margin: 10px 0;
+}
+
+.flex{
+    border: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px 0px 40px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#g1{
+    width: 100%;
+}
+
+#g1>li{
+    border-bottom:1px white solid;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    line-height: 50px;
+}
+
+.g2{
+    font-size: 18px;
+    color:white;
+    display: flex;
+    padding-left: 10px;
+}
+
+#g1>li:hover {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+#g1>li:hover .g2{
+    color:#e47a08
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    float: left;
+    width: 100%;
+    background-color: #b22222;
+}
+
+.ft1{
+    color: white;
+    font-size:20px
+}
+
+#ft2{
+    display: flex;
+    align-items: center;
+}
+
+.section-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+#g1{
+    width: 100%;
+}
+
+#g1>li{
+    border-bottom:1px white solid;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    line-height: 50px;
+}
+
+.g2{
+    font-size: 18px;
+    color:white;
+    display: flex;
+    padding-left: 10px;
+}
+
+#g1>li:hover {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+#g1>li:hover .g2{
+    color:#e47a08
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    float: left;
+    width: 100%;
+    background-color: #b22222;
+}
+
+.ft1{
+    color: white;
+    font-size:20px
+}
+
+#ft2{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* đang nhap */
+#article-login{
+    height: 500px;
+}
+
+#frm-login{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    background-image: url(./HinhAnh/books-1617327_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#table-login{
+    height: 300px;
+    width: 400px;
+    background-color:rgba(69, 110, 110,0.8);
+    padding: 10px;
+    border-radius: 20px;
+}
+.th-login{
+
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+.td-login{
+    padding-top: 10px;
+}
+
+.tr-login{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.i-login{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+form{
+}
+
+.button-login{
+    background-color: lightsalmon;
+    color: white;
+    float: right;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+}
+.input-login{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* dang ki */
+
+#frm-signin{
+    background-image: url(./HinhAnh/thu-viennn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+}
+.table-signin{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color:rgba(69, 110, 110,0.8);
+    border-radius: 20px;
+    font-size: 20px;
+}
+.left{
+    float: left;
+}
+.td-signin{
+    padding: 10px;
+    color: #ffffff;
+}
+.button-signin{
+    padding: 10px;
+    border-radius: 10px;
+}
+input[type="text"],input[type=password],textarea{
+    border-radius: 5px;
+    padding: 10px;
+}
+.th-signin{
+    font-size: 20px;
+    font-weight: bold;
+    color:yellow;
+}
+
+#article-signin{
+    height: 750px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.detail{
+    padding: 5px;
+    background-color:#e47a08;
+    border-radius: 5px;
+    color: white !important;
+}
+
+caption{
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.more-book{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+/* noi dung */
+#frm-noidung{
+    height: 50%;
+}
+
+#table-noidung{
+    height: 100%;
+    width: 100%;
+}
+
+.tr-noidung{
+
+}
+
+.td-noidung{
+    width: 50%;
+    color: #e47a08;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.img-noidung{
+    height: 80%;
+    width: 80%;
+    margin: 10%;
+}
+
+
+.c2{
+    padding: 10px;
+    background-color: #e47a08;
+    color: #ffffff;
+}
+
+.caption-noidung{
+    font-size: 30px;
+    font-weight: bold;
+    color: #e47a08;
+}
+
+.c6{
+    font-size: 30px;
+    font-weight: bold;
+    color: #a8260f;
+}
+
+#article-giohangmuangay{
+    background-color: antiquewhite;
+}
+
+#frm-giohangmuangay{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+#table-giohang{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tr-giohang{
+}
+.td-giohang{
+    padding: 10px;
+    border: 1px solid #666; 
+    color: #ff7300;
+}
+
+.input-giohang{
+    border: 2px solid #a5206c;
+}
